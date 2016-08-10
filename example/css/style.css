@@ -16,11 +16,6 @@ body{
 	
 /* Index 
 =====================================*/
-#home{
-	width:100%;
-    top:0;
-    position: absolute;
-}
 
 #fakehome{
 	width:99%;
@@ -154,8 +149,21 @@ h6{
 }
 
 a{
-    
+    color:#999;
+    text-decoration: none;
+    transition: .5s ease;
 }
+
+a:hover{
+    color:white;
+}
+
+a:visited{
+    color:#999;
+}  
+    
+    
+
 
 .btn{
     color:white;
@@ -169,8 +177,8 @@ a{
 }
 
 .btn:hover{
-    color:#00e6e6;
-    border-color:#00e6e6;
+    color:#9bfde1;
+    border-color:#9bfde1; /*spindrift*/
 }
 
 .btn a:visited{

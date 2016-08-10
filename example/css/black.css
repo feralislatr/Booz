@@ -9,7 +9,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-color: #0f0f0f; 
+	background-color: #0f0f0f !important; 
 	vertical-align: middle;
 }
 
@@ -39,8 +39,9 @@ h3{
  	font-size: 100%;
  	color: #ebebeb;
 
-
  }
+
+/*
 
  a:link,
  a:visited{
@@ -52,6 +53,7 @@ h3{
  a:hover{
  	color:#999;
  }
+*/
 
  img{
  	width: 350px;
@@ -70,7 +72,7 @@ h3{
  hr{
  	position: relative;
  }
-
+/*
  nav a:link,
  nav a:visited{
 	color:#999;
@@ -86,6 +88,7 @@ h3{
  nav a:active{
  	color:#fff;
  }
+*/
 
 #navwrap{
 	width: 100%;
@@ -102,7 +105,6 @@ nav{
 	position: fixed;
 	display: inline-block;
 	right: 25%;
-	background-color: #0f0f0f;
 	opacity: 1.00;
 	whitespace: nowrap;
 	overflow: hidden;
@@ -135,15 +137,6 @@ nav li{
 	padding-left: 40px;
 	text-align: right;
 
-}
-
-
-nav li:hover{
-	margin-top: -2px;    
-  transition: margin-top 5s;
-  -moz-transition: margin-top 5s; /* Firefox 4 */
-  -webkit-transition: margin-top 5s; /* Safari and Chrome */
-  -o-transition: margin-top 5s; /* Opera */
 }
 
 
