@@ -1,4 +1,2 @@
 ##Scratch project
-test
-asf
-asd
+asdf
