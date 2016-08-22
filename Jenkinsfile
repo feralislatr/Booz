@@ -5,5 +5,5 @@ node {
     print 'Hello, world $i!'
   }
 }
-echo "no stages"
+echo "no stages"    
  
