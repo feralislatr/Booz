@@ -1,0 +1,90 @@
+
+#fakehome{
+	width:99%;
+	height:100vh;
+    margin: 8px;
+	background: black;
+	background: url(../img/skulls1.jpg);
+	background-repeat: repeat-x;
+	background-position: 50% 10%;
+	color: white;
+}
+
+#fakehome h2 {
+	color: #cc6695;
+	text-align: center;
+	background-color: #222222;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	margin:0;
+	border-color: cyan;
+	border-bottom-color:pink;
+	border-width: 3px;
+	border-style: inset;
+
+}
+
+
+#fakehome span {
+	font-weight: bold;
+	color: pink;
+}
+
+#button{
+	position:relative;
+	left:50%;
+    top:15%;
+	height:50px;
+	width: 100px;
+	text-align: center;
+    background-color: black;
+    width: 350px;
+
+    border: pink 3px solid;
+    animation: glow 1s infinite alternate;
+
+}
+
+@keyframes glow {
+    to {
+        box-shadow: 0 0 25px pink;
+
+	}
+}
+
+
+#fakehome a{
+	color: pink;
+	text-decoration: none;
+	font-size: 200%;
+}
+
+#fakehome a:hover{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+#fakehome a:active{
+	color: pink;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+#year{
+    position:relative;
+    top:50px;
+    width:500px;
+
+}
+
+#fakehome p{
+    color: white;
+    background-color: magenta;
+
+}
+
+#fakehome p:first-letter {
+    font-size: 25px;
+    color:lightblue;
+}
