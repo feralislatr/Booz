@@ -13,8 +13,6 @@ node {
                   def branchName=readFile('branchnamefile').trim()
                   
                 stage "Print Variables"
-                   sh "cd"  
-                   sh "scp tmp/params.properties /var/lib/jenkins/workspace"
                    
                    sh('cat /params.properties > COMMENT')
                    def stdout = readFile('COMMENT').trim()
