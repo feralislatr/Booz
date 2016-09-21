@@ -11,12 +11,13 @@ node {
                   
                   sh "echo $env.BRANCH_NAME | tr '[:upper:]' '[:lower:]' > branchnamefile"
                   def branchName=readFile('branchnamefile').trim()
+                  sh "echo $branchName"
                   
                 stage "Print Variables"
                    sh "pwd"
                    sh('cat /var/lib/jenkins/workspace/params.properties > COMMENT')
                    def stdout = readFile('COMMENT').trim()
-                   sh "echo COMMENT"
+                   sh "echo $stdout"
 
         } catch (err) {
             throw err
