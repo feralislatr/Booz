@@ -13,8 +13,8 @@ node {
                   def branchName=readFile('branchnamefile').trim()
                   
                 stage "Print Variables"
-                   
-                   sh('cat /params.properties > COMMENT')
+                   sh "pwd"
+                   sh('cat paramtest/portfolio/test/params.properties > COMMENT')
                    def stdout = readFile('COMMENT').trim()
 
         } catch (err) {
