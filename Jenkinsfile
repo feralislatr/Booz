@@ -14,8 +14,7 @@ node {
                   
                 stage "Print Variables"
                    sh "cd .."  
-                   sh "cd tmp"
-                   sh "cat params.txt"
+                   sh "scp tmp/params.properties /var/lib/jenkins/workspace"
                 //   sh "echo $branchName"
                 //   def environment = docker.build "wine-spring-service:$branchName-$env.BUILD_ID" 
                   
