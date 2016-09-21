@@ -14,7 +14,7 @@ node {
                   
                 stage "Print Variables"
                    sh "pwd"
-                   sh('cat params.properties > COMMENT')
+                   sh('cat /workspace/params.properties > COMMENT')
                    def stdout = readFile('COMMENT').trim()
 
         } catch (err) {
