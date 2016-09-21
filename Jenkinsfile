@@ -15,9 +15,9 @@ node {
                   
                 stage "Print Variables"
                    sh "pwd"
-                   sh('cat params.properties > COMMENT')
-                   def stdout = readFile('COMMENT').trim()
-                   sh "echo $stdout"
+                   sh('cat /var/lib/jenkins/workspace/params.properties > COMMENT')
+                   def comment = readFile('COMMENT').trim()
+                   sh "echo $comment"
 
         } catch (err) {
             throw err
