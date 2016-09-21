@@ -13,8 +13,11 @@ node {
                   def branchName=readFile('branchnamefile').trim()
                   
                 stage "Print Variables"
-                   sh "cd .."  
+                   sh "cd"  
                    sh "scp tmp/params.properties /var/lib/jenkins/workspace"
+                   
+                   sh('cat tmp/params.properties > COMMENT')
+                   def stdout = readFile('COMMENT').trim()
                 //   sh "echo $branchName"
                 //   def environment = docker.build "wine-spring-service:$branchName-$env.BUILD_ID" 
                   
