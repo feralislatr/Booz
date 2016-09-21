@@ -48,11 +48,11 @@ node {
                 // sh "docker tag wine-spring-service:$branchName-$env.BUILD_ID dockerhub-app-01.east1e.nonprod.dmz/brianaslateradm/blueocean:$branchName-$env.BUILD_ID"
                 // sh "docker push dockerhub-app-01.east1e.nonprod.dmz/brianaslateradm/blueocean:$branchName-$env.BUILD_ID"
                  
-                stage 'Send Slack Message'
-                slackSend color: "good", message: "Job `${env.JOB_NAME}`, build `${env.BUILD_DISPLAY_NAME}`\nBranch: ${env.BRANCH_NAME}\nCommit author: @${env.USER}\n${currentBuild.result}\nBuild report: ${env.BUILD_URL}"
+                // stage 'Send Slack Message'
+                // slackSend color: "good", message: "Job `${env.JOB_NAME}`, build `${env.BUILD_DISPLAY_NAME}`\nBranch: ${env.BRANCH_NAME}\nCommit author: @${env.USER}\n${currentBuild.result}\nBuild report: ${env.BUILD_URL}"
         } catch (err) {
-            currentBuild.result = "FAILURE"
-            slackSend color: "bad", message: "Job `${env.JOB_NAME}`, build `${env.BUILD_DISPLAY_NAME}`\nBranch: ${env.BRANCH_NAME}\nCommit author: @${env.USER}\n${currentBuild.result}\nBuild report: ${env.BUILD_URL}"
+        //     currentBuild.result = "FAILURE"
+        //     slackSend color: "bad", message: "Job `${env.JOB_NAME}`, build `${env.BUILD_DISPLAY_NAME}`\nBranch: ${env.BRANCH_NAME}\nCommit author: @${env.USER}\n${currentBuild.result}\nBuild report: ${env.BUILD_URL}"
             throw err
         }
 }
