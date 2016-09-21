@@ -16,6 +16,7 @@ node {
                    sh "pwd"
                    sh('cat /var/lib/jenkins/workspace/params.properties > COMMENT')
                    def stdout = readFile('COMMENT').trim()
+                   sh "echo COMMENT"
 
         } catch (err) {
             throw err
